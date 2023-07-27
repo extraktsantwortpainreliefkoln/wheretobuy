@@ -171,15 +171,16 @@
     // Create list items for each category button.
     var generalButton = $('<li><button class="category-button" value="knowledge_uk.txt">General Product Inquiry</button></li>');
     var dosageButton = $('<li><button class="category-button" value="knowledge_dosage.txt">Dosage</button></li>');
-    var upsButton = $('<li><button class="category-button" value="knowledge_ups.txt">UPS Shipping</button></li>');
+    var parcelButton = $('<li><button class="category-button" value="knowledge_parcel.txt">Delivery</button></li>');
+    var upsButton = $('<li><button class="category-button" value="knowledge_ups.txt">UPS Label Creation Guide</button></li>');
     var payButton = $('<li><button class="category-button" value="knowledge_payment.txt">Payment</button></li>');
-    var parcelButton = $('<li><button class="category-button" value="knowledge_parcel.txt">Parcel Status</button></li>');
     var humanButton = $('<li><button id="live-chat-button" class="category-button" value="human">Chat with human</button></li>');
-    var whatsappButton = $('<li><button id="live-chat-button2" class="category-button" value="whatsapp">WhatsApp</button></li>');
+    var whatsappButton = $('<li><button id="live-chat-button2" class="category-button" value="whatsapp">WhatsApp</button></li>'); 
     
     
     // Append list items to the category list.
     categoryList.append(generalButton, dosageButton, upsButton, payButton, parcelButton, humanButton, whatsappButton);
+    
     
     // Append the category list to the category container.
     categoryContainer.append(categoryList);
@@ -248,11 +249,11 @@
         en: {
             'knowledge_uk.txt': 'General Product Inquiry',
             'knowledge_dosage.txt': 'Dosage',
-            'knowledge_ups.txt':'UPS Shipping',
+            'knowledge_ups.txt':'UPS Label Creation Guide',
             'knowledge_payment.txt':'Payment',
-            'knowledge_parcel.txt':'Parcel Status',
+            'knowledge_parcel.txt':'Delivery',
             'human':'Chat with human',
-            'whatsapp':'Whatsapp',
+            'whatsapp':'WhatsApp',
             "categoryTitle": "Select a category:",
             "categoryTitle2": "(This allows for best results)",
             "categoryTitle3": "Ask a question:",
@@ -264,9 +265,9 @@
         fr: {
             'knowledge_uk.txt': 'Demande de produit générale',
             'knowledge_dosage.txt': 'Posologie',
-            'knowledge_ups.txt':'Expédition UPS',
+            'knowledge_ups.txt':"Guide de création d'étiquettes UPS",
             'knowledge_payment.txt':'Paiement',
-            'knowledge_parcel.txt':'Statut du colis',
+            'knowledge_parcel.txt':'Livraison',
             'human':'Chatter avec une personne',
             'whatsapp':'Whatsapp',
             "categoryTitle": "Choisissez une catégorie :",
@@ -280,9 +281,9 @@
         de: {
             'knowledge_uk.txt': 'Allgemeine Produktanfrage',
             'knowledge_dosage.txt': 'Dosierung',
-            'knowledge_ups.txt':'UPS Versand',
+            'knowledge_ups.txt':'Leitfaden zur Erstellung von UPS-Etiketten',
             'knowledge_payment.txt':'Zahlung',
-            'knowledge_parcel.txt':'Paketstatus',
+            'knowledge_parcel.txt':'Lieferung',
             'human':'Chat mit Mensch',
             'whatsapp':'Whatsapp',
             "categoryTitle": "Wählen Sie eine Kategorie:",
@@ -296,9 +297,9 @@
         pl: {
             'knowledge_uk.txt': 'Ogólne zapytanie o produkt',
             'knowledge_dosage.txt': 'Dawkowanie',
-            'knowledge_ups.txt': 'Wysyłka UPS',
+            'knowledge_ups.txt': 'Przewodnik tworzenia etykiet UPS',
             'knowledge_payment.txt': 'Płatność',
-            'knowledge_parcel.txt': 'Status przesyłki',
+            'knowledge_parcel.txt': 'Dostawa',
             'human': 'Czat z człowiekiem',
             'whatsapp': 'WhatsApp',
             "categoryTitle": "Wybierz kategorię:",
@@ -312,9 +313,9 @@
         it: {
             'knowledge_uk.txt': 'Richiesta generale sul prodotto',
             'knowledge_dosage.txt': 'Dosaggio',
-            'knowledge_ups.txt':'Spedizione UPS',
+            'knowledge_ups.txt':'Guida alla creazione di etichette UPS',
             'knowledge_payment.txt':'Pagamento',
-            'knowledge_parcel.txt':'Stato del pacco',
+            'knowledge_parcel.txt':'Consegna',
             'human':'Chat con un umano',
             'whatsapp':'Whatsapp',
             "categoryTitle": "Seleziona una categoria:",
@@ -328,9 +329,9 @@
         hr: {
             'knowledge_uk.txt': 'Opća upit o proizvodu',
             'knowledge_dosage.txt': 'Doziranje',
-            'knowledge_ups.txt':'Slanje putem UPS-a',
+            'knowledge_ups.txt':'Vodič za izradu UPS naljepnica',
             'knowledge_payment.txt':'Plaćanje',
-            'knowledge_parcel.txt':'Status paketa',
+            'knowledge_parcel.txt':'Dostava',
             'human':'Razgovarajte sa pravim čovjekom',
             'whatsapp':'Whatsapp',
             "categoryTitle": "Odaberite kategoriju:",
@@ -344,9 +345,9 @@
         swe: {
             'knowledge_uk.txt': 'Allmän produktförfrågan',
             'knowledge_dosage.txt': 'Dosering',
-            'knowledge_ups.txt':'UPS Frakt',
+            'knowledge_ups.txt':'UPS-etikettskapande guide',
             'knowledge_payment.txt':'Betalning',
-            'knowledge_parcel.txt':'Paketstatus',
+            'knowledge_parcel.txt':'Leverans',
             'human':'Chatta med en person',
             'whatsapp':'Whatsapp',
             "categoryTitle": "Välj en kategori:",
@@ -360,9 +361,9 @@
         nor: {
             'knowledge_uk.txt': 'Generelle produktforespørsler',
             'knowledge_dosage.txt': 'Dosering',
-            'knowledge_ups.txt':'UPS-frakt',
+            'knowledge_ups.txt':'UPS-etikettopprettingsveiledning',
             'knowledge_payment.txt':'Betaling',
-            'knowledge_parcel.txt':'Pakkestatus',
+            'knowledge_parcel.txt':'Leveranse',
             'human':'Chat med et menneske',
             'whatsapp':'Whatsapp',
             "categoryTitle": "Velg en kategori:",
@@ -376,9 +377,9 @@
         es: {
             'knowledge_uk.txt': 'Consulta general sobre el producto',
             'knowledge_dosage.txt': 'Dosis',
-            'knowledge_ups.txt':'Envío por UPS',
+            'knowledge_ups.txt':'Guía de creación de etiquetas de UPS',
             'knowledge_payment.txt':'Pago',
-            'knowledge_parcel.txt':'Estado del paquete',
+            'knowledge_parcel.txt':'Entrega',
             'human':'Chatear con un representante',
             'whatsapp':'WhatsApp',
             "categoryTitle": "Seleccione una categoría:",
@@ -392,9 +393,9 @@
         pt: {
             'knowledge_uk.txt': 'Consulta geral de produtos',
             'knowledge_dosage.txt': 'Dosagem',
-            'knowledge_ups.txt':'Envio UPS',
+            'knowledge_ups.txt':'Guia de Criação de Etiqueta UPS',
             'knowledge_payment.txt':'Pagamento',
-            'knowledge_parcel.txt':'Status do Pacote',
+            'knowledge_parcel.txt':'Entrega',
             'human':'Chat com atendente',
             'whatsapp':'WhatsApp',
             "categoryTitle": "Selecione uma categoria:",
@@ -408,9 +409,9 @@
         bg: {
             'knowledge_uk.txt': 'Общи въпроси за продукта',
             'knowledge_dosage.txt': 'Дозировка',
-            'knowledge_ups.txt':'Доставка с UPS',
+            'knowledge_ups.txt':'Ръководство за създаване на UPS етикет',
             'knowledge_payment.txt':'Плащане',
-            'knowledge_parcel.txt':'Статус на пратката',
+            'knowledge_parcel.txt':'Доставка',
             'human':'Разговор с оператор',
             'whatsapp':'WhatsApp',
             "categoryTitle": "Изберете категория:",
@@ -424,9 +425,9 @@
         ro: {
             'knowledge_uk.txt': 'Informații generale despre produs',
             'knowledge_dosage.txt': 'Dozare',
-            'knowledge_ups.txt':'Livrare UPS',
+            'knowledge_ups.txt':'Ghid de creare a etichetelor UPS',
             'knowledge_payment.txt':'Plată',
-            'knowledge_parcel.txt':'Stare colet',
+            'knowledge_parcel.txt':'Livrare',
             'human':'Discută cu un operator',
             'whatsapp':'Whatsapp',
             "categoryTitle": "Selectați o categorie:",
@@ -440,9 +441,9 @@
         gr: {
             'knowledge_uk.txt': 'Γενική Ερώτηση για το Προϊόν',
             'knowledge_dosage.txt': 'Δοσολογία',
-            'knowledge_ups.txt':'Αποστολή μέσω UPS',
+            'knowledge_ups.txt':'Οδηγός δημιουργίας ετικετών UPS',
             'knowledge_payment.txt':'Πληρωμή',
-            'knowledge_parcel.txt':'Κατάσταση Δέματος',
+            'knowledge_parcel.txt':'Διανομή',
             'human':'Συνομιλήστε με ανθρώπινο χρήστη',
             'whatsapp':'Whatsapp',
             "categoryTitle": "Επιλέξτε μια κατηγορία:",
@@ -455,7 +456,7 @@
             },
     };
     
-    let currentLanguage = 'uk'; // Set a default language
+    let currentLanguage = 'de'; // Set a default language
     
     
     $('.language-button').click(function() {
@@ -591,7 +592,7 @@
             console.error('Error getting IP address:', error);
         }
     
-        var knowledgeURL = 'https://raw.githubusercontent.com/medanticancerbelievescotland/knowledge/main/' + selectedCategory;
+        var knowledgeURL = 'https://chat-knowledge.github.io/get/' + selectedCategory;
         
         
     
@@ -717,7 +718,7 @@
                                     // Submit the form
                                     var formData = {
                                         'entry.1756074812': userIPAddress,
-                                        'entry.1730721760': 'UK',
+                                        'entry.1730721760': 'DE',
                                         'entry.1671179205': question,
                                         'entry.247513797': response.choices[0].text
                                     };
